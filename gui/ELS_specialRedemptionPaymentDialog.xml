@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<GUI onOpen="onOpen" onClose="onClose" onCreate="onCreate">
+    <GuiElement profile="newLayer" />
+    <Bitmap profile="dialogFullscreenBg" />
+    <!-- Main Dialog Container -->
+    <GuiElement profile="ELS_specialRedemptionPaymentDialog" id="dialogElement">
+        <!-- Dialog Background Image -->
+        <ThreePartBitmap profile="fs25_dialogBgTop"/>
+        <ThreePartBitmap profile="fs25_dialogBgMiddle" size="750px 50px"/>
+        <ThreePartBitmap profile="fs25_dialogBgBottom"/>
+        <!-- Dialog Content Container -->
+        <GuiElement profile="fs25_dialogContentContainer">
+            <!-- Dialog Title -->
+            <Text profile="ELS_specialRedemptionPaymentText"
+                text="$l10n_els_ui_specialRedemptionPaymentText" id="dialogTextElement" />
+            <BoxLayout profile="ELS_specialRedemptionPaymentFlowLayout">
+                <TextInput profile="ELS_takeLoanInput" id="amountInput"
+                    onEnterPressed="onEnterPressed"
+                    onTextChanged="onTextChanged" enterWhenClickOutside="false" />
+                <Text profile="ELS_specialRedemptionPaymentRestAmount"
+                    text="$l10n_els_ui_specialRedemptionPaymentRestAmount" id="restAmountField" />
+            </BoxLayout>
+
+        </GuiElement>
+        <!-- Dialog Actions -->
+        <BoxLayout profile="fs25_dialogButtonBox" id="buttonsPC">
+            <Button profile="buttonOK" text="$l10n_els_ui_acceptSpecialRedemptionPayment"
+                onClick="onClickOk"
+                id="yesButton" />
+            <Button profile="buttonBack" text="$l10n_button_back" onClick="onClickCancel"
+                id="backButton" />
+        </BoxLayout>
+    </GuiElement>
+</GUI>

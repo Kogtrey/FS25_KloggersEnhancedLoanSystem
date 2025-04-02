@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<GUIProfiles>
+    <Presets>
+        <Preset name="colorTransparent" value="0 0 0 0" />
+        <Preset name="colorWhite" value="1 1 1 1" />
+        <Preset name="colorDisabled" value="0.4 0.4 0.4 1" />
+        <Preset name="colorGrayHeader" value="0.4 0.4 0.4 1" />
+        <Preset name="colorListHeaderBackground" value="0 0 0 0" />
+        <Preset name="colorListSectionHeader" value="0.61 0.86 0.99 0" />
+    </Presets>
+
+    <!-- Loan InGameMenu -->
+
+    <!-- <Profile name="ELS_loanInterestText" extends="textDefault">
+        <size value="900px 64px" />
+        <position value="600px 0px" />
+        <textSize value="31px" />
+        <textBold value="false" />
+        <textUpperCase value="true" />
+        <textDisabledColor value="$preset_colorDisabled" />
+        <textAlignment value="right" />
+    </Profile> -->
+
+    <Profile name="ELS_menuHeaderIcon" extends="baseReference" with="anchorMiddleCenter">
+        <size value="50px 50px" />
+        <imageSliceId value="gui.icon_ingameMenu_prices" />
+        <imageColor value="$preset_fs25_colorMainDark" />
+    </Profile>
+
+    <Profile name="ELS_contentBody" extends="emptyPanel" with="anchorTopStretchingX">
+        <absoluteSizeOffset value="0px 10px"/>
+    </Profile>
+
+    <Profile name="ELS_headerBox" extends="emptyPanel" with="anchorTopLeft">
+        <size value="100% 40px" />
+        <flowDirection value="horizontal" />
+        <alignmentX value="Left" />
+        <alignmentY value="middle" />
+        <fitFlowToElements value="true" />
+    </Profile>
+
+    <Profile name="ELS_headerCell" extends="ingameMenuFrameHeaderText" with="anchorMiddleLeft">
+        <textSize value="20px"/>
+        <textBold value="false"/>
+        <textUpperCase value="false"/>
+        <textColor value="$preset_colorGrayHeader"/>
+        <textAlignment value="right"/>
+        <textVerticalAlignment value="middle"/>
+    </Profile>
+
+    <Profile name="ELS_ingameMenuListBox" extends="emptyPanel" with="anchorTopCenter">
+        <size value="100% 756px"/>
+    </Profile>
+
+    <Profile name="ELS_list" extends="emptyPanel" with="anchorTopLeft pivotTopLeft">
+        <position value="0px -40px"/>
+    </Profile>
+
+    <Profile name="ELS_listItem" extends="baseReference" with="anchorTopStretchingX alternating">
+        <height value="32px" />
+        <imageColor value="$preset_fs25_colorGrey" />
+        <imageSelectedColor value="$preset_fs25_colorMainHighlight" />
+        <alternateBackgroundColor value="$preset_fs25_colorGreyDark_50" />
+        <alignmentX value="center"/>
+    </Profile>
+    <Profile name="ELS_listSectionHeader" extends="baseReference" with="anchorTopStretchingX alternating">
+        <height value="32px" />
+        <imageColor value="$preset_colorListSectionHeader" />
+        <imageSelectedColor value="$preset_fs25_colorMainHighlight" />
+        <alternateBackgroundColor value="$preset_colorListSectionHeader" />
+        <alignmentX value="center" />
+    </Profile>
+
+    <Profile name="ELS_ingameMenuSlider" extends="fs25_listSliderBox" with="anchorStretchingYRight pivotTopRight">
+        <position value="28px -40px" />
+        <absoluteSizeOffset value="0px 80px" />
+    </Profile>
+
+    <Profile name="ELS_ingameMenuSliderBar" extends="fs25_listSliderBox">
+        <size value="6px 692px" />
+    </Profile>
+
+    <Profile name="ELS_rowCell" extends="baseReference">
+        <textBold value="false" />
+        <textSize value="15px" />
+        <textAlignment value="right" />
+        <textColor value="$preset_fs25_colorMainLight" />
+        <textSelectedColor value="$preset_fs25_colorMainDark" />
+        <textDisabledColor value="$preset_colorDisabled" />
+    </Profile>
+    <Profile name="ELS_SectionHeaderCell" extends="baseReference">
+        <textBold value="true" />
+        <textSize value="15px" />
+        <textAlignment value="left" />
+        <textColor value="$preset_fs25_colorMainLight" />
+    </Profile>
+
+    <!-- Take loan dialog -->
+    <Profile name="ELS_takeLoanDialog" extends="fs25_dialogBg">
+        <size value="800px 350px"/>
+    </Profile>
+
+    <Profile name="ELS_takeLoanText" extends="dialogText" with="anchorTopCenter">
+        <position value="0px -10px"/>
+        <size value="510px 25px"/>
+        <textSize value="20px"/>
+        <textWrapWidth value="400px"/>
+    </Profile>
+
+    <Profile name="ELS_takeLoanFlowLayout" extends="baseReference" with="anchorMiddleCenter">
+        <alignmentX value="left"/>
+        <alignmentY value="middle"/>
+        <size value="510px 300px" />
+        <position value="0px -25px"/>
+        <flowDirection value="vertical"/>
+        <imageColor value="$preset_colorTransparent"/>
+        <flowMargin value="10px"/>
+    </Profile>
+
+    <Profile name="ELS_takeLoanFlowLayoutHorizontal" extends="baseReference" with="anchorBottomCenter">
+        <alignmentX value="left"/>
+        <alignmentY value="middle"/>
+        <size value="100% 50px"/>
+        <position value="0px -40px"/>
+        <imageColor value="$preset_colorTransparent"/>
+        <flowDirection value="vertical"/>
+        <fitFlowToElements value="true" />
+    </Profile>
+
+    <Profile name="ELS_takeLoanInfoTextShort" extends="textDefault">
+        <position value="0px 0px"/>
+        <size value="100% 20px"/>
+        <textSize value="16px"/>
+        <textWrapWidth value="200px"/>
+        <textAlignment value="left"/>
+    </Profile>
+
+    <Profile name="ELS_takeLoanInfoTextLong" extends="textDefault">
+        <position value="0px 0px"/>
+        <size value="100% 20px"/>
+        <textSize value="16px"/>
+        <textWrapWidth value="300px"/>
+        <textAlignment value="left"/>
+    </Profile>
+
+    <Profile name="ELS_takeLoanInputText" extends="textDefault">
+        <position value="0px 0px" />
+        <size value="100% 30px"/>
+        <textSize value="16px"/>
+        <textWrapWidth value="350px"/>
+    </Profile>
+
+    <Profile name="ELS_takeLoanInput" extends="textInput">
+        <size value="100% 40px"/>
+        <position value="0px 0px" />
+        <maxCharacters value="9"/>
+        <textAlignment value="left" />
+    </Profile>
+
+    <Profile name="ELS_takeLoanInputYear" extends="textInput">
+        <size value="100% 40px"/>
+        <position value="0px 0px"/>
+        <maxCharacters value="2"/>
+        <textAlignment value="left" />
+    </Profile>
+
+    <!-- Take loan dialog -->
+    <Profile name="ELS_specialRedemptionPaymentDialog" extends="fs25_dialogBg">
+        <size value="750px 300px"/>
+    </Profile>
+
+    <Profile name="ELS_specialRedemptionPaymentText" extends="dialogText">
+        <position value="0px -20px"/>
+        <size value="750px 20px"/>
+        <textSize value="20px"/>
+        <textWrapWidth value="300px"/>
+        <textAlignment value="center"/>
+    </Profile>
+
+    <Profile name="ELS_specialRedemptionPaymentFlowLayout" extends="baseReference" with="anchorMiddleCenter">
+        <alignmentX value="center" />
+        <alignmentY value="middle" />
+        <size value="350px 200px" />
+        <position value="0px -10px" />
+        <flowDirection value="vertical" />
+        <imageColor value="$preset_colorTransparent" />
+    </Profile>
+
+    <Profile name="ELS_specialRedemptionPaymentRestAmount" extends="textDefault">
+        <position value="15px 0px" />
+        <size value="350px 20px" />
+        <textSize value="16px" />
+        <textWrapWidth value="350px" />
+    </Profile>
+</GUIProfiles>
