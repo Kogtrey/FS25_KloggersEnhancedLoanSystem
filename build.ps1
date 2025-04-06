@@ -19,7 +19,7 @@ try {
         Copy-Item -Recurse -path "$PSScriptRoot/$file" -Destination $mTEMPPATH
     }
     
-    Compress-Archive -Path $mTEMPPATH -DestinationPath "$PSScriptRoot/build/$MOD_NAME" -Update
+    Compress-Archive -Path "$mTEMPPATH/*" -DestinationPath "$PSScriptRoot/build/$MOD_NAME" -Update
     
     Remove-Item $mTEMPPATH -Recurse -Force
     
