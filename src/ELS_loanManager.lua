@@ -141,7 +141,7 @@ function ELS_loanManager:calculateVehicleAmount(farmId)
 	local amount = 0
 
     for _, vehicle in ipairs(g_currentMission.vehicleSystem.vehicles) do
-        if vehicle.ownerFarmId == farmId and vehicle.propertyState == Vehicle.PROPERTY_STATE_OWNED and vehicle.getSellPrice ~= nil then
+        if vehicle.ownerFarmId == farmId and vehicle.propertyState == VehiclePropertyState.OWNED and vehicle.getSellPrice ~= nil then
             amount = amount + vehicle:getSellPrice()
         end
     end
