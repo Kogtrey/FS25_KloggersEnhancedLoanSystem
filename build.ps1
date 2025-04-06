@@ -14,6 +14,7 @@ try {
     $DESCFILE.InnerXml | Out-File "$PSScriptRoot/modDesc.xml"
     
     Copy-Item -Path "$PSScriptRoot/modDesc.xml" -Destination $mTEMPPATH
+    Copy-Item -Path "$PSScriptRoot/*.dds" -Destination $mTEMPPATH
     foreach ($file in $FILES) {
         Copy-Item -Recurse -path "$PSScriptRoot/$file" -Destination $mTEMPPATH
     }
